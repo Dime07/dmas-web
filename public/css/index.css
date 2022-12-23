@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* use min-width for lg up, so default css is for mobile */
+#main-wrapper{
+    background-color: #030E21;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    position: relative;
+}
+
+/* navbar */
+.nav{
+    width: 100%;
+    padding-top: 40px;
+    padding: 40px 10px 0 10px;
+    padding-left: 10px !important;
+    position: relative;
+    z-index: 10;
+}
+
+@media (min-width: 1200px) {
+    .nav{
+        padding: 40px 120px 0 120px;
+        padding-left: 120px !important;
+        
+    }
+}
+
+.nav .menu-item{
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 40px;
+    opacity: 0.7;
+    text-decoration: none;
+    transition:all 0.3s ease-in-out;
+}
+
+
+@media (min-width: 1200px) {
+    .nav .menu-item{
+        font-size: 18px;
+    }
+}
+
+.nav .menu-item:hover{
+    opacity: 1;
+}
+
+/* Button */
+.btn-arrow p{
+    text-decoration: none !important;
+    color: #F8E7A1;
+    font-size: 14px;
+    transition:all 0.5s ease-in-out;
+    margin-right: 40px;
+}
+
+@media (min-width: 1200px) {
+    .btn-arrow p{
+        font-size: 20px;
+    }
+}
+
+.btn-arrow:hover p{
+    margin-right:80px;
+}
+
+/* card-porto */
+.card-porto{
+    width: 100%;
+    border-radius: 12px 12px;
+    overflow: hidden;
+    background-color: #0A1528;
+}
+
+.card-porto .thumbnail{
+    object-fit: cover !important;
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+}
+
+.card-porto .thumbnail img{
+    width: 100%;
+}
+
+.card-porto .content .title-porto{
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.card-porto .content .category-porto{
+    font-size: 20px;
+    color: #868490;
+}
+
+/* hero section */
+#hero-section{
+    padding:40px 10px;
+    position: relative;
+}
+
+@media (min-width: 1200px) {
+    #hero-section{
+        padding: 150px 120px;
+        position: relative;
+    }
+}
+
+#hero-section .decor-1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -600px;
+    margin-right: -300px;
+    transform: rotate(0);
+    animation: rotate 5s linear infinite;
+    scale: 0;
+}
+
+@media (min-width: 1200px) {
+    #hero-section .decor-1{
+        scale: 1;
+        margin-right: -300px;
+    }
+}
+
+#hero-section .decor-2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -600px;
+    margin-left: -500px;
+    transform: rotate(0);
+    animation: rotate 8s linear infinite;
+    scale: 0.5;
+    z-index: -1;
+}
+
+@media (min-width: 1200px) {
+    #hero-section .decor-2{
+        scale: 1;
+    }
+}
+
+
+
+#hero-section .label{
+    font-size: 20px;
+    font-weight: 600;
+    color: #868490;
+}
+
+@media (min-width: 1200px) {
+    #hero-section .label{
+        font-size: 47px;
+    }
+}
+
+#hero-section .title{
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#hero-section .title::after{
+    position: absolute;
+    content: '';
+    height: 0px;
+    width: 20%;
+    bottom: 0;
+    margin-bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #F8E7A1;
+}
+
+@media (min-width: 1200px) {
+    #hero-section .title{
+        font-size: 80px;
+        margin-bottom: 80px;
+    }
+
+    #hero-section .title::after{
+        height: 8px;
+    }
+}
+
+
+
+#hero-section .description{
+    font-size: 14px;
+    width: 90%;
+    color: #868490;
+}
+
+@media (min-width: 1200px) {
+    #hero-section .description{
+        font-size: 20px;
+        width: 40%;
+    }
+}
+
+/* tech-section */
+
+#tech-section .tech-wrapper{
+    padding: 40px 10px;
+    background: rgba(9, 20, 39, 0.6);
+    backdrop-filter: blur(4px);
+    flex-wrap: wrap;
+}
+
+
+@media (min-width: 1200px) {
+    #tech-section .tech-wrapper{
+        padding: 50px 120px;
+    }
+}
+
+
+#tech-section .tech-wrapper img{
+    transition: all 0.3s ease-in-out;
+    scale: 0.6;
+}
+
+@media (min-width: 1200px) {
+    #tech-section .tech-wrapper img{
+        scale: 1;
+    }
+}
+
+#tech-section .tech-wrapper img:hover{
+    scale: 1.1;
+}
+
+/* portofolio section */
+#portofolio-section{
+    padding: 40px 10px;
+}
+
+@media (min-width: 1200px) {
+    #portofolio-section{
+        padding: 150px 120px;
+    }
+}
+
+#portofolio-section .box-wrapper{
+    padding: 40px;
+    background: rgba(9, 20, 39, 0.6);
+    backdrop-filter: blur(2px);
+    border-radius: 6px;
+    position: relative;
+    z-index: 3;
+}
+
+#portofolio-section .title{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    #portofolio-section .title{
+        font-size: 62px;
+    }
+}
+
+/* contact section */
+#contact-section{
+    padding: 0 10px;
+    position: relative;
+}
+
+@media (min-width: 1200px) {
+    #contact-section{
+        padding: 0 120px;
+        position: relative;
+    }
+}
+
+#contact-section .decor-3{
+    position: absolute;
+    right: 0;
+    margin-right: -300px;
+    top: 0;
+    margin-top: -700px;
+    scale: 0;
+}
+
+@media (min-width: 1200px) {
+    #contact-section .decor-3{
+        margin-right: -300px;
+        margin-top: -700px;
+        scale: 0.9;
+    }
+}
+
+#contact-section .title{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    #contact-section .title{
+        font-size: 62px;
+        margin-bottom: 88px;
+    }
+}
+
+#contact-section .image{
+    object-fit: cover !important;
+    width: 100%;
+    height: 300px;
+    overflow: hidden !important;
+    position: relative;
+    z-index: 5;
+}
+
+#contact-section .image-child{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+    #contact-section .image{
+        height: 600px;
+    }
+}
+
+/* footer */
+
+footer{
+    padding: 25px 120px;
+    background-color: #091427;
+    margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+    footer{
+        margin-top: -80px;
+    }
+}
+
+footer .title{
+    font-size: 24px;
+    font-weight: 500;
+}
+footer a{
+    text-decoration: none;
+}
+
+/* animation */
+@keyframes rotate{
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
